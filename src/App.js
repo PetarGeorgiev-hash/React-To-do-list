@@ -31,7 +31,6 @@ function App() {
 
   function getDataFromInput(test) {
     setData((prevState) => {
-      //console.log(prevState, test);
       return [test, ...prevState];
     });
   }

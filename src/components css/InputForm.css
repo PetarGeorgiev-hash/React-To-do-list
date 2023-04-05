@@ -1,0 +1,58 @@
+.formWrapper {
+  width: auto;
+  height: 10rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: #4e4e4e;
+  box-shadow: 1px 3px 3px 1px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2rem;
+  border-radius: 2rem;
+  position: sticky;
+}
+
+.form {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 6.5rem;
+  align-items: center;
+}
+#submitButton {
+  background-color: rgb(118, 118, 195);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+#submitButton:hover {
+  background-color: rgb(49, 172, 92);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+#textInput {
+  height: 3.5rem;
+  width: 15rem;
+  border: #4e4e4e solid;
+  border-radius: 1rem;
+}
+select {
+  height: 3.5rem;
+  width: 7.5rem;
+  border: #4e4e4e solid;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+#timeInput {
+  height: 3rem;
+  width: 5.5rem;
+  border: #4e4e4e solid;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+#submitButton {
+  height: 3.5rem;
+  width: 7.5rem;
+  border: #4e4e4e solid;
+  border-radius: 1rem;
+}

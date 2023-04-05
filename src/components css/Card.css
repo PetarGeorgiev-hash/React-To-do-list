@@ -1,0 +1,65 @@
+.card {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  background-color: #4e4e4e;
+  height: 6rem;
+  width: 80%;
+  border-radius: 2rem;
+}
+.cardTitle {
+  font-size: 2rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cardTimeAndDate {
+  font-size: 1.2rem;
+  margin: 0 0 0 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.cardButtons {
+  margin-top: 1.5rem;
+  gap: 1rem;
+  display: flex;
+  margin-right: 2rem;
+  opacity: 0;
+}
+
+.card:hover .cardButtons {
+  opacity: 1;
+}
+
+.card__button__Done {
+  cursor: pointer;
+  background-color: green;
+  border-radius: 2rem;
+  border: #4e4e4e solid;
+  height: 2rem;
+  width: 4rem;
+}
+.card__button__Remove {
+  cursor: pointer;
+  background-color: rgb(120, 57, 57);
+  border-radius: 2rem;
+  border: #4e4e4e solid;
+  height: 2rem;
+  width: 5rem;
+}
+
+.card__button__Done:hover {
+  cursor: pointer;
+  background-color: rgb(8, 200, 8);
+  border-radius: 2rem;
+  border: #4e4e4e solid;
+  height: 2rem;
+  width: 4rem;
+}
+.card__button__Remove:hover {
+  cursor: pointer;
+  background-color: rgb(190, 72, 72);
+  border-radius: 2rem;
+  border: #4e4e4e solid;
+  height: 2rem;
+  width: 5rem;
+}

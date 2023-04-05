@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import InputForm from "./InputForm";
+import Card from "./Card";
 
 function App() {
+  const dataObj = [
+    {
+      id: 1,
+      title: "Get food",
+      day: "Monday",
+      time: "09:30",
+      color: "#4e4e4e",
+    },
+    {
+      id: 2,
+      title: "Go shopping",
+      day: "Sunday",
+      time: "12:30",
+      color: "#4e4e4e",
+    },
+    {
+      id: 3,
+      title: "Fill the car",
+      day: "Wednessday",
+      time: "01:00",
+      color: "#4e4e4e",
+    },
+  ];
+  const [data, setData] = useState(dataObj);
+
+  function getDataFromInput(test) {
+    setData((prevState) => {
+      //console.log(prevState, test);
+      return [test, ...prevState];
+    });
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InputForm func={getDataFromInput} />
+      <div className="wrapper">
+        {data.map((element) => {
+          return <Card key={element.id} cardData={element} />;
+        })}
+      </div>
     </div>
   );
 }
